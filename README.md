@@ -32,7 +32,7 @@ To run OrpheusHook, you'll need:
 #### Docker
 
 ```bash
-docker pull ghcr.io/s0up4200/orpheushook:latest
+docker pull ghcr.io/locke69321/orpheushook:latest
 ```
 
 **docker compose**
@@ -42,7 +42,7 @@ version: "3.7"
 services:
   orpheushook:
     container_name: orpheushook
-    image: ghcr.io/s0up4200/orpheushook:latest
+    image: ghcr.io/locke69321/orpheushook:latest
     user: 1000:1000
     environment:
       - SERVER_ADDRESS=0.0.0.0 # binds to 127.0.0.1 by default
@@ -53,14 +53,14 @@ services:
 
 #### Using precompiled binaries
 
-Download the appropriate binary for your platform from the [releases](https://github.com/s0up4200/OrpheusHook/releases/latest) page.
+Download the appropriate binary for your platform from the [releases](https://github.com/locke69321/OrpheusHook/releases/latest) page.
 
 #### Building from source
 
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/s0up4200/OrpheusHook.git
+git clone https://github.com/locke69321/OrpheusHook.git
 ```
 
 2. Navigate to the project directory:

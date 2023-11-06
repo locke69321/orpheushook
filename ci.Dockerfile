@@ -21,7 +21,7 @@ RUN --mount=target=. \
 # build runner
 FROM alpine:latest
 
-LABEL org.opencontainers.image.source = "https://github.com/s0up4200/orpheushook"
+LABEL org.opencontainers.image.source = "https://github.com/locke69321/orpheushook"
 
 ENV HOME="/config" \
 XDG_CONFIG_HOME="/config" \

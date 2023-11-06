@@ -26,7 +26,7 @@ RUN go build -ldflags "-s -w -X main.version=${VERSION} -X main.commit=${REVISIO
 # build runner
 FROM alpine:latest
 
-LABEL org.opencontainers.image.source = "https://github.com/s0up4200/redactedhook"
+LABEL org.opencontainers.image.source = "https://github.com/locke69321/redactedhook"
 
 ENV HOME="/config" \
 XDG_CONFIG_HOME="/config" \
