@@ -9,7 +9,7 @@ ARG BUILDTIME
 
 RUN apk add --no-cache git make build-base tzdata
 
-ENV SERVICE=redactedhook
+ENV SERVICE=orpheushook
 
 WORKDIR /src
 

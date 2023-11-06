@@ -43,7 +43,7 @@ jobs:
       - name: Upload assets
         uses: actions/upload-artifact@v3
         with:
-          name: redactedhook
+          name: orpheushook
           path: dist/*
 
   goreleaser:
@@ -75,7 +75,7 @@ jobs:
       - name: Upload assets
         uses: actions/upload-artifact@v3
         with:
-          name: redactedhook
+          name: orpheushook
           path: dist/*
 
   docker:
@@ -98,7 +98,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: ghcr.io/s0up4200/redactedhook
+          images: ghcr.io/s0up4200/orpheushook
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2

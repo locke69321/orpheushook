@@ -15,12 +15,12 @@ import (
 )
 
 const (
-	APIEndpointBase = "https://redacted.ch/ajax.php"
-	Pathhook        = "/redacted/hook"
+	APIEndpointBase = "https://orpheus.network/ajax.php"
+	Pathhook        = "/orpheus/hook"
 )
 
 // Rate limit requests to max 10 requests per 10 seconds
-var limiter = rate.NewLimiter(rate.Every(1*time.Second), 10)
+var limiter = rate.NewLimiter(rate.Every(0.5*time.Second), 10)
 
 //var (
 //	version = "dev"
@@ -320,7 +320,7 @@ func main() {
 	zerolog.SetGlobalLevel(zerolog.DebugLevel)
 	log.Logger = log.Output(zerolog.ConsoleWriter{Out: os.Stderr, TimeFormat: "2006-01-02 15:04:05", NoColor: false})
 
-	//log.Info().Msgf("RedactedHook version %s, commit %s", version, commit[:7])
+	//log.Info().Msgf("OrpheusHook version %s, commit %s", version, commit[:7])
 
 	http.HandleFunc(Pathhook, hookData)
 

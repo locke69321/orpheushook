@@ -1,11 +1,11 @@
 version: "3.7"
 services:
-  redactedhook:
-    container_name: redactedhook
-    image: ghcr.io/s0up4200/redactedhook:latest
+  orpheushook:
+    container_name: orpheushook
+    image: ghcr.io/s0up4200/orpheushook:latest
     user: 1000:1000
     environment:
       - SERVER_ADDRESS=0.0.0.0 # binds to 127.0.0.1 by default
-      - SERVER_PORT=42135 # defaults to 42135
+      - SERVER_PORT=42136 # defaults to 42136
     ports:
       - "42135:42135"

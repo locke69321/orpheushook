@@ -1,4 +1,4 @@
-module RedactedHook
+module OrpheusHook
 
 go 1.20
 
