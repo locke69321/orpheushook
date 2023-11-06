@@ -19,8 +19,8 @@ const (
 	Pathhook        = "/orpheus/hook"
 )
 
-// Rate limit requests to max 10 requests per 10 seconds
-var limiter = rate.NewLimiter(rate.Every(0.5*time.Second), 10)
+// Rate limit requests to max 5 requests per 10 seconds
+var limiter = rate.NewLimiter(rate.Every(10*time.Second), 5)
 
 //var (
 //	version = "dev"
