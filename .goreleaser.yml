@@ -3,7 +3,7 @@ before:
     - go mod tidy
 
 builds:
-  - id: redactedhook
+  - id: orpheushook
     env:
       - CGO_ENABLED=0
     goos:
@@ -29,12 +29,12 @@ builds:
       - goos: freebsd
         goarch: arm64
     main: ./main.go
-    binary: redactedhook
+    binary: orpheushook
 
 archives:
-  - id: redactedhook
+  - id: orpheushook
     builds:
-      - redactedhook
+      - orpheushook
     format_overrides:
       - goos: windows
         format: zip
@@ -48,11 +48,11 @@ archives:
 release:
   prerelease: auto
   footer: |
-    **Full Changelog**: https://github.com/s0up4200/redactedhook/compare/{{ .PreviousTag }}...{{ .Tag }}
+    **Full Changelog**: https://github.com/s0up4200/orpheushook/compare/{{ .PreviousTag }}...{{ .Tag }}
 
     ## Docker images
 
-    - `docker pull ghcr.io/s0up4200/redactedhook:{{ .Tag }}`
+    - `docker pull ghcr.io/s0up4200/orpheushook:{{ .Tag }}`
 
 checksum:
   name_template: "{{ .ProjectName }}_{{ .Version }}_checksums.txt"
